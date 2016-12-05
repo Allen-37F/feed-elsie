@@ -5,7 +5,7 @@ angular.module('myApp.directives', [])
       replace: true,
       template:'<span></span>',
       scope: {
-        'url': 'http://10.2.10.195'
+        'url': '='
       },
       link: function (scope, element, attrs) {
         scope.$watch('url', function (newVal, oldVal) {
@@ -31,4 +31,4 @@ angular.module('myApp.directives', [])
         }, true);
       }
     };
-  })
+  });
