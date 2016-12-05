@@ -1,1 +1,4 @@
 /* add custom styles */
+mjpeg {
+  border: 5px solid red;
+}
