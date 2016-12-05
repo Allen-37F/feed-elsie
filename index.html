@@ -18,15 +18,18 @@
 
 <!-- This portion isn't working. it is attached to the motionjpeg.js file in the src/js folder. -->
     <!-- This image should hold the live streaming MJPEG. The sample code comes from http://stackoverflow.com/questions/19346775/rendering-mjpeg-stream-in-html5 -->
-    <img id="motionjpeg" src="http://10.2.10.195:80/" alt="" />
+    <!-- <img id="motionjpeg" src="http://10.2.10.195:80/" alt="" />
     <script src="src/js/motionjpeg.js"></script>
     <script>
       //Using jQuery for simplicity
       $(document).ready(function() {
           motionjpeg("#motionjpeg"); // Use the function on the image
       });
-  </script>
+  </script> -->
 
+<!-- here's another option, using angular directives. This code is connected with the mjpeg-directives.js file and is from  -->
+  <mjpeg url="videoUrl"></mjpeg>
+  <script type="text/javascript" src="src/js/mpeg-directives.js"></script>
 
 
     <!-- scripts -->
