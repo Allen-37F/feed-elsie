@@ -11,10 +11,24 @@
     <!-- sample angular code -->
     <div class="container">
       <div >
-        <h2></h2>
+        <h2>Feed my dog!</h2>
         <p>This page loads, at least! Let's feed Elsie!</p>
+        <embed type="MJPG" src="#" width="300" height="300">
       </div>
     </div>
+
+    <!-- This image should hold the live streaming MJPEG. The sample code comes from http://stackoverflow.com/questions/19346775/rendering-mjpeg-stream-in-html5 -->
+    <img id="motionjpeg" src="http://10.2.10.195:80/" />
+    <script src="src/js/motionjpeg.js"></script>
+    <script>
+      //Using jQuery for simplicity
+      $(document).ready(function() {
+          motionjpeg("#motionjpeg"); // Use the function on the image
+      });
+  </script>
+
+
+
     <!-- scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
