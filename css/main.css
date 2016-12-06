@@ -2,6 +2,7 @@
 
 html {
   font-family: montserrat;
+  background-color: #ffdcaa;
 
 }
 
@@ -13,7 +14,14 @@ html {
   left: 25%
 }
 
+.button {
+  color: #e89e35;
+}
+
 #elsiecam-header {
-  color: #54585e;
+  color: #c07915;
   text-align: center;
 }
+
+
+/*Color of image text: #ffbb5b*/
