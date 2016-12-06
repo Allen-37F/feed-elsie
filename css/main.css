@@ -1,4 +1,10 @@
-/* add custom styles */
+
+
+html {
+  font-family: montserrat;
+  
+}
+
 #mjpeg_dest {
   border-radius: 30px;
   height: 480px;
