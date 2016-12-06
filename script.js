@@ -151,7 +151,7 @@ function reload_img () {
 }
 
 function error_img () {
-  setTimeout("mjpeg_img.src = 'cam_pic.php?time=' + new Date().getTime();", 100);
+  setTimeout("mjpeg_img.src = PiUrl + 'cam_pic.php?time=' + new Date().getTime();", 100);
 }
 
 function updatePreview(cycle)
@@ -169,7 +169,7 @@ function updatePreview(cycle)
       {
          if(!halted)
          {
-            mjpeg_img.src = "cam_pic_new.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
+            mjpeg_img.src = PiUrl + "cam_pic_new.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
          }
          else
          {
