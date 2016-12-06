@@ -19,9 +19,31 @@ html body .colorme {
 
 }
 
-.button .btn {
+.button1 {
   color: #e89e35;
+  background-color:
+  border-radius: 10px;
+  height: 80px;
+  width: auto;
 }
+
+.button2 {
+  color: #e89e35;
+  background-color:
+  border-radius: 10px;
+  height: 60px;
+  width: auto;
+
+}
+
+.button3 {
+  color: #e89e35;
+  border-radius: 10px;
+  height: 80px;
+  width: auto;
+
+}
+
 
 #elsiecam-header {
   color: #c07915;
