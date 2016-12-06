@@ -26,7 +26,7 @@ angular.module('myApp.directives', [])
             doc.writeln(iframeHtml);
             doc.close();
           } else {
-            element.html('<span></span>');
+            element.html('<span>broken</span>');
           }
         }, true);
       }
