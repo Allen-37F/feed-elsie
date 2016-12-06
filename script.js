@@ -143,7 +143,7 @@ var mjpeg_mode = 0;
 var preview_delay = 0;
 
 function reload_img () {
-  if(!halted) mjpeg_img.src = "cam_pic.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
+  if(!halted) mjpeg_img.src = "http://10.2.10.195/cam_pic.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
   else setTimeout("reload_img()", 500);
 }
 
