@@ -21,25 +21,26 @@ html body .colorme {
 
 .button1 {
   color: #e89e35;
-  background-color:
+  background-color:#242086;
   border-radius: 10px;
-  height: 80px;
+  height: 30px;
   width: auto;
 }
 
 .button2 {
   color: #e89e35;
-  background-color:
+  background-color: #7673ca;
   border-radius: 10px;
-  height: 60px;
+  height: 30px;
   width: auto;
 
 }
 
 .button3 {
   color: #e89e35;
+  background-color: #2496df;
   border-radius: 10px;
-  height: 80px;
+  height: 30px;
   width: auto;
 
 }
