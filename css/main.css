@@ -1,5 +1,4 @@
 
-
 html body .colorme {
   font-family: montserrat;
   background-color: #ffdcaa;
@@ -16,7 +15,6 @@ html body .colorme {
   width: 680px;
   position: absolute;
   left: 25%
-
 }
 
 .button1 {
@@ -33,7 +31,6 @@ html body .colorme {
   border-radius: 10px;
   height: 30px;
   width: auto;
-
 }
 
 .button3 {
