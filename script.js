@@ -148,7 +148,7 @@ function reload_img () {
 }
 
 function error_img () {
-  setTimeout("mjpeg_img.src = 'cam_pic.php?time=' + new Date().getTime();", 100);
+  setTimeout("mjpeg_img.src = 'http://10.2.10.195/cam_pic.php?time=' + new Date().getTime();", 100);
 }
 
 function updatePreview(cycle)
@@ -158,7 +158,7 @@ function updatePreview(cycle)
       if (cycle !== undefined && cycle == true)
       {
          mjpeg_img.src = "/updating.jpg";
-         setTimeout("mjpeg_img.src = \"cam_pic_new.php?time=\" + new Date().getTime()  + \"&pDelay=\" + preview_delay;", 1000);
+         setTimeout("mjpeg_img.src = \"http://10.2.10.195/cam_pic_new.php?time=\" + new Date().getTime()  + \"&pDelay=\" + preview_delay;", 1000);
          return;
       }
 
@@ -166,7 +166,7 @@ function updatePreview(cycle)
       {
          if(!halted)
          {
-            mjpeg_img.src = "cam_pic_new.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
+            mjpeg_img.src = "http://10.2.10.195/cam_pic_new.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
          }
          else
          {
