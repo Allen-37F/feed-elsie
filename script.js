@@ -1,4 +1,7 @@
-// This code is borrowed from the RPi_Cam_Web_Interface. It is the JS code running on 10.2.10.195/min.php when I have the camera hosting a video from my local network. We'll see if it does the job when injected into my website. I suspect that it won't.
+// This code is borrowed from the RPi_Cam_Web_Interface. It is the JS code running on 10.2.10.195/min.php when I have the camera hosting a video from the Galvanize network.
+
+var PiUrl = "http://10.2.10.195/";
+
 // Interface
 //
 function toggle_fullscreen(e) {
@@ -143,12 +146,12 @@ var mjpeg_mode = 0;
 var preview_delay = 0;
 
 function reload_img () {
-  if(!halted) mjpeg_img.src = "http://10.2.10.195/cam_pic.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
+  if(!halted) mjpeg_img.src = PiUrl + "cam_pic.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
   else setTimeout("reload_img()", 500);
 }
 
 function error_img () {
-  setTimeout("mjpeg_img.src = 'http://10.2.10.195/cam_pic.php?time=' + new Date().getTime();", 100);
+  setTimeout("mjpeg_img.src = 'cam_pic.php?time=' + new Date().getTime();", 100);
 }
 
 function updatePreview(cycle)
@@ -158,7 +161,7 @@ function updatePreview(cycle)
       if (cycle !== undefined && cycle == true)
       {
          mjpeg_img.src = "/updating.jpg";
-         setTimeout("mjpeg_img.src = \"http://10.2.10.195/cam_pic_new.php?time=\" + new Date().getTime()  + \"&pDelay=\" + preview_delay;", 1000);
+         setTimeout("mjpeg_img.src = \"cam_pic_new.php?time=\" + new Date().getTime()  + \"&pDelay=\" + preview_delay;", 1000);
          return;
       }
 
@@ -166,7 +169,7 @@ function updatePreview(cycle)
       {
          if(!halted)
          {
-            mjpeg_img.src = "http://10.2.10.195/cam_pic_new.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
+            mjpeg_img.src = "cam_pic_new.php?time=" + new Date().getTime() + "&pDelay=" + preview_delay;
          }
          else
          {
