@@ -2,36 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Feed Elsie!</title>
+    <title>KnickKnack</title>
     <!-- styles -->
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
+  <!-- the onload command tells the page to reload constantly. This pulls the most recent image from the Pi's hosting and replaces the old jpg with the new one. This gives the impression of motion picture. -->
   <body onload="setTimeout('init(0,25,1);', 1000);">
-    <!-- <center> -->
-      <!-- <div><img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="cam_pic.php?time=1481045211579&amp;pDelay=40000"></div>
-    </center> -->
+
+    <h2 id="elsiecam-header">Live ElsieCam</h2>
+    <div>
+      <img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="http://10.2.10.195/cam_pic.php?time=1481044422503&amp;pDelay=40000" alt=""/>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
 
 </body>
-    <!-- sample angular code -->
-    <div class="container">
-      <div >
-        <h2>Feed my dog!</h2>
-      </div>
-    </div>
-
-  <h2>Image:</h2>
-  <div>
-    <img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="http://10.2.10.195/cam_pic.php?time=1481044422503&amp;pDelay=40000" />
-  </div>
-  <script type="text/javascript" src="./script.js"></script>
-
 
     <!-- scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
-    <script type="text/javascript" src="src/js/mpeg-directives.js"></script>
+
 
 
 
