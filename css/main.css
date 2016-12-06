@@ -6,6 +6,10 @@ html {
 
 }
 
+#kklogomain {
+  text-align: center;
+}
+
 #mjpeg_dest {
   border-radius: 40px;
   height: 480px;
