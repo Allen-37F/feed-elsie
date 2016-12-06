@@ -2,15 +2,15 @@
 
 html {
   font-family: montserrat;
-  
+
 }
 
 #mjpeg_dest {
-  border-radius: 30px;
+  border-radius: 40px;
   height: 480px;
   width: 680px;
   position: absolute;
-  left: 50%
+  left: 25%
 }
 
 #elsiecam-header {
