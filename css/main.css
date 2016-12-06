@@ -1,9 +1,8 @@
 
 
-html body{
+html body .colorme {
   font-family: montserrat;
   background-color: #ffdcaa;
-
 }
 
 #kklogomain {
@@ -26,6 +25,11 @@ html body{
 #elsiecam-header {
   color: #c07915;
   text-align: center;
+}
+
+btn-lg {
+  background-color: #242086;
+  color: #a4a1e2
 }
 
 
