@@ -16,9 +16,10 @@ html body .colorme {
   width: 680px;
   position: absolute;
   left: 25%
+
 }
 
-.button {
+.button .btn {
   color: #e89e35;
 }
 

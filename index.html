@@ -9,14 +9,16 @@
   </head>
   <!-- the onload command tells the page to reload constantly. This pulls the most recent image from the Pi's hosting and replaces the old jpg with the new one. This gives the impression of motion picture. -->
   <body class="colorme" onload="setTimeout('init(0,25,1);', 1000);">
+
     <div class="container">
       <img class="kklogomain" src="./images/kklarge.png" height="120px" width="180px" alt="">
+      
       <h2 id="elsiecam-header">Give the dog a bone!</h2>
       <div>
         <img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="http://10.2.10.195/cam_pic.php?time=1481044422503&amp;pDelay=40000" alt=""/>
       </div>
       <br>
-      <div class="container">
+      <div class="container ">
         <button type="button" class="btn-primary btn-lg" name="callDog">Call Elsie!</button>
         <br>
         <button type="button" class="btn-primary btn-lg" name="dispense">Dispense a treat</button>
