@@ -1,12 +1,13 @@
 /* add custom styles */
 #mjpeg_dest {
   border-radius: 30px;
-  height: 680px;
-  width: 420px;
+  height: 480px;
+  width: 680px;
   position: absolute;
   left: 50%
 }
 
 #elsiecam-header {
-  color: yellow;
+  color: #54585e;
+  text-align: center;
 }
