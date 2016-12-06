@@ -1,13 +1,14 @@
 
 
-html {
+html body{
   font-family: montserrat;
   background-color: #ffdcaa;
 
 }
 
 #kklogomain {
-  text-align: center;
+  position: absolute;
+  left: 40%
 }
 
 #mjpeg_dest {
