@@ -1,3 +1,13 @@
+/*Color of image text: #ffbb5b*/
+
+* {
+    margin: 0;
+    padding: 0;
+  	-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
 
 html body .colorme {
   font-family: montserrat;
@@ -5,11 +15,19 @@ html body .colorme {
 }
 
 #kklogomain {
-  /*position: absolute;*/
-  left: 40%
+  float: right;
+  left: 40%;
+  /*padding-right: 18px;*/
+  /*margin-right: 18px;*/
+  border-radius: 18px;
+}
+
+.feed {
+  /*position:fixed;*/
 }
 
 #mjpeg_dest {
+  margin-left: 18px;
   border-radius: 40px;
   height: 480px;
   width: 680px;
@@ -18,16 +36,14 @@ html body .colorme {
   vertical-align: -100px;
 }
 
-
 #elsiecam-header {
   color: #c07915;
   text-align: center;
-  position: float;
+  float: right;
   /*vertical: -190px;*/
   /*align-items: center;*/
 
 }
-
 
 .button1 {
   color: #e89e35;
@@ -37,22 +53,94 @@ html body .colorme {
   width: auto;
 }
 
-.button2 {
-  color: #e89e35;
-  background-color: #7673ca;
-  border-radius: 10px;
-  height: 30px;
-  width: auto;
-}
+/*Button code:*/
 
-.button3 {
-  color: #e89e35;
-  background-color: #2496df;
-  border-radius: 10px;
-  height: 30px;
-  width: auto;
+	body {
+		width: 100%;
+		height: 100%;
+		font-family: "montserrat", helvetica, arial, sans-serif;
 
-}
+		background: #333;
+	}
 
+	@-moz-keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+	@-webkit-keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+	@-o-keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+	@keyframes rotate {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
 
-/*Color of image text: #ffbb5b*/
+	.round {
+		/*display: block;*/
+		/*position: absolute;*/
+		margin-left: 50px;
+    margin-top: 40px;
+		top: 0;
+		width: 100px;
+		height: 100px;
+		padding-top: 0px;
+		text-decoration: none;
+		text-align: center;
+		font-size: 25px;
+		text-shadow: 0 1px 0 rgba(255,255,255,.7);
+		letter-spacing: -.065em;
+		font-family: "Hammersmith One", sans-serif;
+		-webkit-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+		box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+		border-radius: 300px;
+		z-index: 1;
+		border-width: 4px;
+		border-style: solid;
+	}
+
+	.round:hover {
+		width: 120px;
+		height: 120px;
+		left: -15%;
+		top: -15%;
+		font-size: 33px;
+		padding-top: 0px;
+		-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		z-index: 2;
+		border-size: 10px;
+		-webkit-transform: rotate(-360deg);
+		-moz-transform: rotate(-360deg);
+		-o-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+
+	button.red {
+		background-color: rgba(239,57,50,1);
+		color: rgba(133,32,28,1);
+		border-color: rgba(133,32,28,.2);
+	}
+
+	button.red:hover {
+		color: rgba(239,57,50,1);
+	}
+
+	button.green {
+		background-color: rgba(1,151,171,1);
+		color: rgba(0,63,71,1);
+		border-color: rgba(0,63,71,.2);
+	}
+
+	button.green:hover {
+		color: rgba(1,151,171,1);
+	}
