@@ -11,9 +11,16 @@
   function mainController($scope, $http) {
     /*jshint validthis: true */
     this.greeting = 'Hello World!';
+
+    this.callDog = function() {
+      console.log("Calling the doglet");
+      $http.get('http://elsiefeeder.localtunnel.me/call')
+      // .then(data1, error);
+    }
+
     this.dispense = function() {
-      console.log("dispensing in 3 seconds");
-      $http.get('http://elsiefeeder.localtunnel.me')
+      console.log("Dispensing in 3 seconds");
+      $http.get('http://elsiefeeder.localtunnel.me/spin')
       // .then(data1, error);
     }
   }
