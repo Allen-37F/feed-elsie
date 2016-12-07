@@ -8,7 +8,7 @@
     .module('myApp', [
       'myApp.config',
       'myApp.components.main',
-      'myApp.directives'
+      // 'myApp.directives'
     ]);
 
 })();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <title>KnickKnack</title>
@@ -8,20 +8,22 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <!-- the onload command tells the page to reload constantly. This pulls the most recent image from the Pi's hosting and replaces the old jpg with the new one. This gives the impression of motion picture. -->
-  <body class="colorme" onload="setTimeout('init(0,25,1);', 1000);">
+  <body ng-controller="mainController as mainCtrl" class="colorme" onload="setTimeout('init(0,25,1);', 1000);">
 
     <div class="container">
       <img class="kklogomain" src="./images/kklarge.png" height="120px" width="180px" alt="">
 
       <h2 id="elsiecam-header">Give the dog a bone!</h2>
+      <h2>{{mainCtrl.greeting}}</h2>
+
       <div>
         <img id="mjpeg_dest" onclick="toggle_fullscreen(this);" src="http://10.2.10.195/cam_pic.php?time=1481044422503&amp;pDelay=40000" alt="./images/Elsiestop.jpg"/>
       </div>
       <br>
       <div class="container ">
-        <button type="button" class="button1" name="callDog">Call Elsie!</button>
+        <button type="button" ng-click="callDog()" class="button1" name="callDog">Call Elsie!</button>
         <br>
-        <button type="button" class="button1" name="dispense">Dispense a treat</button>
+        <button type="button" class="button1" ng-click="mainCtrl.dispense()" name="dispense">Dispense a treat</button>
         <br>
         <button type="button" class="button2" name="photos">Photo Gallery</button>
         <br>
@@ -35,15 +37,16 @@
     </div>
 </body>
 
+
     <!-- scripts -->
     <script type="text/javascript" src="//code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
 
 
+    <script type="text/javascript" src="src/js/app.js"></script>
+    <script type="text/javascript" src="src/js/config.js"></script>
+    <script type="text/javascript" src="src/js/components/main/main.controller.js"></script>
 
-
-<!-- Script for PubNub. Will this work -->
-    <script src="http://cdn.pubnub.com/pubnub-3.7.1.min.js"></script>
   </body>
 </html>
