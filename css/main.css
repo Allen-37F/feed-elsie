@@ -60,7 +60,7 @@ html body .colorme {
 		height: 100%;
 		font-family: "montserrat", helvetica, arial, sans-serif;
 
-		background: #333;
+		/*background: #333;*/
 	}
 
 	@-moz-keyframes rotate {
