@@ -144,3 +144,17 @@ html body .colorme {
 	button.green:hover {
 		color: #cccccc;
 	}
+
+  .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+      background-color: #f5f5f5;
+      text-align: center;
+  }
+
+.af-logo {
+  height: 40px;
+  width:auto;
+}
