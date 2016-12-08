@@ -23,10 +23,25 @@ This dog treat dispenser is a Raspberry Pi running vc4l (video client for linux)
 
  My Raspberry Pi is a Pi 3 model B running Pixel Debian Jessie New Out Of the Box Software (NOOBS). The command line speaks Linux, and Node manages installation packages. The GPIO pin controls are managed by a plugin called johnny-five, written by SparkFun, which has offices in Boulder, CO. I wrote the program first in Python, and then in Javascript. The webcam is managed by "RPi Cam Web Interface". Commands are issued to the device via VNC, localtunnel javascript, and a USB keyboard and mouse. My biggest challenges in the project included learning how to solder, hosting the live streaming video on my personal website, and issuing controls to the Pi from a variety of remote sources.
 
+
 ## Hosting
 
 The front end is hosted on my website, allenfordham dot com, and uses javascript, and HTML with ajax managing the live stream. Hosting the live stream over anything but a LAN requires port forwarding, which I have not yet implemented.
 
-## Next Steps
 
-I have a future path for this project already in mind.  I’d like to incorporate PayPal donations, so that anybody on the internet can log in to my device and, for a small donation to the ASPCA or MaxFund, watch Elsie eat a treat that they dispense themselves. For this, the Pi needs to be connected to a network with port forwarding enabled so that the stream is available.
+## The Way Forward
+
+I have a future path for this project already in mind.  I’d like to incorporate the donation button into the treat dispense function. The goal is to allow anybody on the internet can log in to my device and, for a small donation to the ASPCA or MaxFund, watch Elsie eat a treat that they dispense themselves. A slightly chubbier dog will be worth is to me if it helps other animals in need. For this, the Pi needs to be connected to a network with port forwarding enabled so that the stream is available.
+
+
+## Implementing this project yourself (in progress):
+
+What you'll need:
+ 1. A Raspberry Pi Running Debian with Node Package Manager (NPM). I used a Pi 3 Model B running New Out of the Box Software (NOOBS).
+ 1. A webcam. I used the PiCam 1.2, which ran me about thirty bucks. It connects directly to the Pi's camera port and is plug-and-play.
+ 1. A small electrical motor. I used a standard 130 size 6v electric motor. The Adafruit model 711 will cost you about two bucks.
+ 1. A few basic shop tools:
+   2. A thermoplastic adhesive applicator - also known as a hot glue gun
+   2. A soldering iron. The KnickKnack uses jumper wires to connect electrical components - a hot glue gun can do the trick, but soldered pieces are more durable.
+   2. Some wood for the frame and mechanical parts. I used 3/4 inch plywood for the body and a four-inch section of wooden lattice to push the treats out of the queue.
+   2. A jigsaw or table saw for cutting out the wooden pieces. It also helps to have sandpaper, an electric drill,

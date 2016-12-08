@@ -132,7 +132,7 @@ html body .colorme {
 	}
 
 	button.red:hover {
-		color: rgba(239,57,50,1);
+		color: #cccccc;
 	}
 
 	button.green {
@@ -142,5 +142,5 @@ html body .colorme {
 	}
 
 	button.green:hover {
-		color: rgba(1,151,171,1);
+		color: #cccccc;
 	}

@@ -6,6 +6,14 @@
     .module('myApp.components.main', [])
     .controller('mainController', mainController);
 
+
+// First, use this command to run ngrok from Pi: "./ngrok http 3000"
+// Then enter the URL of the hosted page into this variable:
+var url = "http://17cb7654.ngrok.io/"
+
+// If you're using localtunnel instead of ngrok, type the command "lt -s elsiefeeder --port 3000", which will host the server at:
+// "elsiefeeder.localtunnel.me"
+
   mainController.$inject = ['$scope', '$http'];
 
   function mainController($scope, $http) {
@@ -14,13 +22,13 @@
 
     this.callDog = function() {
       console.log("Calling the doglet");
-      $http.get('http://elsiefeeder.localtunnel.me/call')
+      $http.get(url + 'call')
       // .then(data1, error);
     }
 
     this.dispense = function() {
       console.log("Dispensing in 3 seconds");
-      $http.get('http://elsiefeeder.localtunnel.me/spin')
+      $http.get(url + 'spin')
       // .then(data1, error);
     }
   }
