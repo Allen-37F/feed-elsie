@@ -1,6 +1,6 @@
 // This code is borrowed from the RPi_Cam_Web_Interface. It is the JS code running on 10.2.10.195/min.php when I have the camera hosting a video from the Galvanize network. Much of the functionality is unfortunately unavailable in this context. I'm working on it.
 
-var PiUrl = "http://10.2.10.195/";
+var PiUrl = "http://192.168.1.35/";
 
 // Interface
 //
